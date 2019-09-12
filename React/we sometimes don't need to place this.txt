@@ -1,0 +1,3 @@
+The reason why sometimes we bind "this" is because we are using event handler's like onClick. On that event handler "this" automatically refers to the element clicked on.
+
+Now in this case this.guessedWord() isn't an event handler so "this" in guessed word refers to the class not an element.

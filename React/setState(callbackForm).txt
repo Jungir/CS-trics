@@ -1,0 +1,21 @@
+Great question.  There really isn't a good reason to use the object syntax here, except that you save a couple characters by not writing the arrow function.  Both versions will work just fine in this scenario, but it is generally better to use the function form.
+
+(this is partly from the React docs)
+
+You may optionally pass an object (what I did) as the first argument to setState() instead of a function:
+
+    setState(stateChange[, callback])
+
+This performs a shallow merge of stateChange into the new state, e.g., to adjust a shopping cart item quantity:
+
+    this.setState({quantity: 2})
+
+This form of setState() is also asynchronous, and multiple calls during the same cycle may be batched together. For example, if you attempt to increment an item quantity more than once in the same cycle, that will result in the equivalent of:
+
+    Object.assign(  previousState,  {quantity: state.quantity + 1},  {quantity: state.quantity + 1},  ...)
+
+Subsequent calls will override values from previous calls in the same cycle, so the quantity will only be incremented once. If the next state depends on the current state, we recommend using the updater function form, instead:
+
+    this.setState((state) => {  return {quantity: state.quantity + 1};});
+
+So technically, it is always safer/better to use the callback form. In practice it sometimes doesn't matter if you're only updating the state one call at a time like we are here. It's not "risky" to use an object here, because the state will definitely be updated. It's only risky if we have multiple state updates happening immediately one after another, or if some other part of the app could be updating the state at the same time.  With all that said, it's always a good idea to use the function form even if it doesn't give you an explicit benefit every time.

@@ -1,0 +1,7 @@
+Icon basic styling: 
+    color: #414a4f;
+    font-size: 1rem;
+    margin-right: .5rem;
+    background: rgba(255,255,255, .9);
+    padding: .3rem;
+    border-radius: 5px;

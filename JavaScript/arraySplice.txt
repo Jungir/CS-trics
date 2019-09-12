@@ -1,0 +1,3 @@
+    let arr = ["a","b","c","d"];
+    arr.splice(0,1)  // ["a"] , without[0] , you get an array
+    arr.splice(0,1)[0]  // "a" , with[0] , you get just the item from the array.

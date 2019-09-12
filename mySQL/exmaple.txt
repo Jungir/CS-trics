@@ -1,0 +1,15 @@
+    CREATE TABLE employees (
+        id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+        first_name VARCHAR(255) NOT NULL,
+        last_name VARCHAR(255) NOT NULL,
+        middle_name VARCHAR(255),
+        age INT NOT NULL,
+        current_status VARCHAR(255) NOT NULL DEFAULT 'employed'
+    );
+
+Type: netstat –ao
+Search for the PID [Process ID] of the port 3306 of the localhost
+Once you find it, in our case it was 664 then type in CMD
+Taskkill /F /PID 664
+Once the “SUCCESS” is shown in the CMD
+Restart your SQL.

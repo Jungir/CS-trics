@@ -1,0 +1,8 @@
+html{
+  /* min haight of the screen */
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+}
+//gives min height to the html as a screen size;

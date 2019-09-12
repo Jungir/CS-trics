@@ -1,0 +1,7 @@
+
+Background props: 
+	background-image: url();
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-clip: content-box;

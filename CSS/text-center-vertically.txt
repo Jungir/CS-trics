@@ -1,0 +1,7 @@
+/*  width: 100px;
+    height: 100px;
+    line-height: 100px;
+    will center text vertically    
+*/
+
++ text-align center, //centers horiz

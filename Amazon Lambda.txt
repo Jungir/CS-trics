@@ -1,0 +1,18 @@
+========
+installing Atlas on heroku
+
+Here's a video I made that details how to set up and use MongoDB Atlas with Node (Express).
+
+Here's the official docs.
+
+Here's how to migrate form an existing mLab account.
+
+And, here's the official getting started guide.
+
+=========
+env veriable
+https://www.udemy.com/the-web-developer-bootcamp/learn/lecture/4481080#questions/7076174
+
+=====amazon lambda
+
+https://rocky-taiga-56029.herokuapp.com/

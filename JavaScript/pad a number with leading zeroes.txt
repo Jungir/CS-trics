@@ -1,0 +1,1 @@
+let padToThree = function (number){ return(number <= 999 ? `00${number}`.slice(-3) : number);}

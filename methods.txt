@@ -1,0 +1,20 @@
+string replace method str.replace(/blue/gi); case-insensitive
+
+
+<p id="demo">Mr Blue has a blue house and a blue car.</p>
+
+
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var res = str.replace(/blue|house|car/gi, function (x) {
+    return x.toUpperCase();
+  });
+  document.getElementById("demo").innerHTML = res;
+}
+
+
+General search: http://www.omdbapi.com/?s=guardians+of+the+galaxy&apikey=thewdb 
+
+Search with Movie ID: http://www.omdbapi.com/?i=tt3896198&apikey=thewdb 
+
+So everything is exactly the same as Colt explains in the following videos, except you must append &apikey=thewdb to the end of your url.

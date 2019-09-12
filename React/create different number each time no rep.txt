@@ -1,0 +1,15 @@
+
+      generate = () => {
+        let arr = [];
+     
+        while (arr.length < this.props.maxBalls) {
+          let random = Math.floor(Math.random() * this.props.maxNum) + 1;
+          if (arr.indexOf(random) === -1) {
+            arr.push(random)
+          }
+        }
+     
+        this.setState({
+          nums: [...arr]
+        })
+      };

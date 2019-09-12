@@ -1,0 +1,22 @@
+C:\> "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld" mySQL //deamon
+C:\> "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqladmin" -u root shutdown //shut-down 
+
+
+connect to mySQL though cmd
+ "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u user -p
+
+first make sure u ran sql deamon on the background and then connect any type of DBMS
+Maria DB
+ C:\Users\Jocker\Downloads\server\mysql\bin\mysql.exe mySQL -h localhost -u root
+
+
+======int 
+NT is by default signed, INT (which is shorthand for INT SIGNED) therefore has the MAX VALUE of 2147483647.  INT UNSIGNED  is 0 to 4294967295.
+
+You have to explicitly modify INT to get a different range. This is the same with all integer types; hence the confusion. They are both INT, but they are not technically the same.
+
+They are both integers of type INT; so you could say 4294967295 is the largest available INT value.
+
+You can compare this to CHAR vs VARHCHAR. Yes a CHAR is a string, as is VARCHAR; but it behaves differently than VARCHAR. One has a set amount of memory (CHAR), the other can vary its memory footprint (VARCHAR). They're both stings but they behave differently, because of a modification.
+
+The largest integer (of any type) available in MySQL (currently) is BIGINT UNSIGNED at 9,223,372,036,854,775,807.

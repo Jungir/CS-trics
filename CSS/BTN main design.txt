@@ -1,0 +1,74 @@
+div.container{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* takes out mozilla default dotted border */
+button::-moz-focus-inner {
+    border: 0;
+}  
+
+my btn design:
+#showcase-content button{
+    text-align: center;
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgb(70, 197, 193);
+    transition: background-color .3s;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+button:hover:active{
+    outline: none;
+    transform: none;
+    border: none;
+}
+#showcase-content button:hover{
+    background: rgb(73, 224, 219);
+    transition: .3s;
+}
+end of my design
+===================
+===================
+colt's animatable btn
+=================== 
+.btn{
+    background-color: orange;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0 auto;
+_____________________ main code starts here
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    letter-spacing: 2px;
+
+    /* x-offset y-offset */
+    box-shadow: 0 6px #efa424;
+}
+.btn:hover{
+    box-shadow: 0 4px #efa424;
+    top: 2px;
+    
+}
+.btn:active{
+    /* stop the text to move to the right */
+    padding: 0;
+    box-shadow: none;
+    top: 4px;
+}

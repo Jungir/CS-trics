@@ -1,0 +1,13 @@
+git --no-pager log --oneline -n 10
+
+    --no-pager will encounter the (END) word
+    -n 10 will show only the last 10 commits
+    --oneline will show the commit message, ignore the author, date information
+
+
+
+You're in the less program, which makes the output of git log scrollable.
+
+Type q to exit this screen. Type h to get help.
+
+If you don't want to read the output in a pager and want it to be just printed to the terminal define the environment variable GIT_PAGER to cat or set core.pager to cat (execute git config --global core.pager cat).
